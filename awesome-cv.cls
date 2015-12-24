@@ -302,7 +302,8 @@
 
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
-\newcommand*{\github}[1]{\def\@github{#1}}
+\newcommand*{\githuba}[1]{\def\@githuba{#1}}
+\newcommand*{\githubb}[1]{\def\@githubb{#1}}
 
 % Defines writer's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
@@ -432,7 +433,7 @@
             {\@headersocialsep}
           \href{http://\@homepage}{\faHome\ \@homepage}
         }
-      \ifthenelse{\isundefined{\@github}}
+      \ifthenelse{\isundefined{\@githuba}}
         {}
         {
           \ifbool{isstart}
@@ -440,7 +441,17 @@
               \setbool{istart}{false} 
             }
             {\@headersocialsep}
-          \href{https://github.com/\@github}{\faGithubSquare\ \@github}
+          \href{https://github.com/\@githuba}{\faGithubSquare\ \@githuba}
+        }
+      \ifthenelse{\isundefined{\@githubb}}
+        {}
+        {
+          \ifbool{isstart}
+            {
+              \setbool{istart}{false} 
+            }
+            {\@headersocialsep}
+          \href{https://github.com/\@githubb}{\faGithubSquare\ \@githubb}
         }
       \ifthenelse{\isundefined{\@stackoverflowid}}
         {}
@@ -662,4 +673,21 @@
       \\\\\\
       \letterenclosurestyle{\@letterenclname:  \@letterenclosure} \\
     }
+}
+
+
+
+%
+% GARETH GEORGE'S CUSTOMIZATIONS TO THIS TEMPLATE
+%
+\newenvironment{mycvskills}{
+  \vspace{-4mm}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep, label={-}]
+    \setlength{\parskip}{0pt}
+    \bodyfont
+    \small
+}
+{
+  \end{itemize}
+  \vspace{-2mm}
 }
