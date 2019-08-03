@@ -496,7 +496,7 @@
     } \\
     \ifthenelse{\isundefined{\@quote}}
       {}
-      {\vspace{6.0mm}\headerquotestyle{\@quote\\}\vspace{5.0mm}}
+      {\vspace{3.0mm}\headerquotestyle{\@quote\\}\vspace{5.0mm}}
   \end{center}
 }
 
@@ -518,11 +518,11 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  \par\addvspace{1ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak\addvspace{0.2ex}
 }
 
 % Define a subsection for CV
@@ -636,7 +636,7 @@
 % Define a paragraph for cvletter
 % Usage: \cvparagraph{<paragraph-title>}
 \newcommand{\cvparagraph}[1]{
-  \par\addvspace{2.5ex}
+  \par\addvspace{1.5ex}
   \phantomsection{}
   \paragraphstyle{#1}
   \color{gray}\vhrulefill{0.9pt}

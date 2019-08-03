@@ -14,14 +14,14 @@
     }
 
   \cventry
-    {Software Engineering Intern}
+    {Sotware Engineering Intern}
     {Adobe Summer 2016 and Summer 2017}
     {San Jose, CA}
     {June - September 2017}
     {
       \begin{cvitems}
         \item Worked on Adobe Sketch and Adobe Draw team
-        \item Contributed to implementation of file management UI redesign and improved performance by implementing multi-threaded loading and generation of image thumbs
+        \item Contributed to implementation of file management UI redesign and improved performance by implementing multithreaded loading and generation of image thumbs
         \item Refactored layer management to use the iOS 12 Drag and Drop API's and this feature was shipped as a release highlight for the iOS 12 update
       \end{cvitems}
     }
